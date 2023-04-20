@@ -24,8 +24,8 @@
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        newstring = ""
+        new_string = ""
         for i in s:
             if i.isalnum():
-                newstring += i.lower()
-        return newstring == newstring[::-1]
+                new_string += i.lower()
+        return new_string == new_string[::-1]
