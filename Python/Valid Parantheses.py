@@ -31,11 +31,11 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
-        closeToOpen = {")": "(", "]": "[", "}": "{"}
+        close_Open = {")": "(", "]": "[", "}": "{"}
 
         for i in s:
-            if i in closeToOpen:
-                if stack and stack[-1] == closeToOpen[i]:
+            if i in close_Open:
+                if stack and stack[-1] == close_Open[i]:
                     stack.pop()
                 else:
                     return False
